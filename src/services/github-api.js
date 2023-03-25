@@ -12,7 +12,6 @@ export const octokit = new Octokit({
 // Get branches from a repo and return the data
 export const getFavorites = async (req ) => {
 	const {owner,repo, page} = req;
-	console.log("pippo5",page)
 	try {
 		const response = await octokit.request(`GET /repos/${owner}/${repo}/stargazers`, {
 			owner: owner,

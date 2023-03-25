@@ -1,8 +1,6 @@
 import React, {useRef, useState, useCallback} from 'react'
 import { Button, SafeAreaView, Text, TextInput, View, FlatList, Image, StyleSheet } from 'react-native'
 import { getFavorites } from '../services/github-api';
-import StargazersList from './StargazersList';
-import {BottomSheetModal, BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 
 export default function Home({ navigation }) {
     const [ownerRef, setOwnerRef] = useState("octocat");
