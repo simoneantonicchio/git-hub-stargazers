@@ -21,7 +21,6 @@ export default function StargazersList({route}) {
             }
            
             await getFavorites(req).then((resp)=>{
-              console.log("pippo", req.page)
               if(resp.status == 200){
                 setStargazers(old => [...old, ...resp.data])
                 setPage(page + 1)
