@@ -1,30 +1,30 @@
 # Git-hub-stargazers
 
-A [React Native](https://facebook.github.io/react-native) application to obtain github REPO Stargazers.
+A [React Native](https://facebook.github.io/react-native) application to get a github REPO Stargazers list.
 
-<p align="center">
+<p>
   <img src="https://res.cloudinary.com/ddkjggkaz/image/upload/v1680541350/ezgif.com-resize-min_y8cp2f.gif" width="200"/></br>
 </p>
 
 ## Getting started
 
-1. Edit .ENV file with your personal Github token. Click [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one if you need.
+1. Edit .ENV file with your personal Github token. Click [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create a new one.
 
 2. Install node-modules:
 
     `npm install`
 
-3. <ins>If you have not install</ins> the application on native device, please follow below command ( **if you have, please jump this step and move to 3**):
+3. <ins>If you have not installed</ins> the application on native device, please run the command below ( **if you already have, please jump to step 4**):
     - Android devices: `npm run android`
     - iOS device `npm run ios`
 
-4. <ins>If you have yet install</ins> install the application on native device, please run below command to start server:
+4. <ins>If you have installed</ins> the application on native device, please run the command below to start the server:
 
     `npm start`
 
-## Usage
+## UI Usage
 
-Insert repository owner and repository name and click on Submit button to see related Stargazers.
+Insert repository owner and repository name and click on submit button to get the related Stargazers list.
 
 ## Libraries used
 
