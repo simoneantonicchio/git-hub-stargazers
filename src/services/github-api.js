@@ -24,3 +24,14 @@ export const getFavorites = async (req ) => {
 		console.log(error);
 	}
 }
+
+export const getUser = async ( owner ) => {
+	try {
+		const response = await octokit.request(`GET /users/${owner}`,{
+			username: owner,
+		});
+			return response;
+	} catch (error) {
+		console.log(error);
+	}
+}

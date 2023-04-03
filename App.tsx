@@ -8,30 +8,31 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
-  View,
 } from 'react-native';
 
 import Home from './src/views/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StargazersList from './src/views/StargazersList';
+import { ThemeContext } from './src/context/ThemeContext';
+import Toast from 'react-native-toast-message';
 
 function App(): JSX.Element {
   const Stack = createNativeStackNavigator();
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="StargazersList" options={{ title: 'Stargazers' }} component={StargazersList} />
-        </Stack.Navigator>
-      </NavigationContainer>
+    <ThemeContext>
+      <SafeAreaView style={styles.safeArea}> 
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen name="Stargazers finder" component={Home} />
+            <Stack.Screen name="StargazersList" options={{ title: 'Stargazers' }} component={StargazersList} />
+          </Stack.Navigator>
+        </NavigationContainer>
+        <Toast />
     </SafeAreaView>
+    </ThemeContext>
+    
   );
 }
 
