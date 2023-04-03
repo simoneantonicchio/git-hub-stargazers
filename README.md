@@ -1,9 +1,9 @@
 # Git-hub-stargazers
 
-A [React Native](https://facebook.github.io/react-native) Application to get github REPO Stargazers.
+A [React Native](https://facebook.github.io/react-native) application to obtain github REPO Stargazers.
 
 <p align="center">
-  <img src="https://res.cloudinary.com/ddkjggkaz/image/upload/v1680540597/ezgif.com-resize_ekcaye.gif" width="200"/></br>
+  <img src="https://res.cloudinary.com/ddkjggkaz/image/upload/v1680541350/ezgif.com-resize-min_y8cp2f.gif" width="200"/></br>
 </p>
 
 ## Getting started
